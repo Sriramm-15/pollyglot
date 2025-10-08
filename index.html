@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PollyGlot</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="translator-card">
+    <img src="assets/parrot.png" alt="PollyGlot Logo" class="logo">
+    <h1>PollyGlot</h1>
+    <p>Perfect Free Translation Every Time</p>
+
+    <label>Text to translate 👇</label>
+    <textarea id="textInput" placeholder="Type something..."></textarea>
+
+    <label>Select language 👇</label>
+    <div class="languages">
+      <input type="radio" id="french" name="lang" value="fr" checked>
+      <label for="french">French</label>
+
+      <input type="radio" id="spanish" name="lang" value="es">
+      <label for="spanish">Spanish</label>
+
+      <input type="radio" id="japanese" name="lang" value="ja">
+      <label for="japanese">Japanese</label>
+
+      <input type="radio" id="hindi" name="lang" value="hi">
+      <label for="hindi">Hindi</label>
+
+      <input type="radio" id="telugu" name="lang" value="te">
+      <label for="telugu">Telugu</label>
+    </div>
+
+    <button id="translateBtn">
+      Translate <span id="langFlag" style="font-size: 1.2em; margin-left: 5px;"></span>
+    </button>
+    <div id="timer" style="margin:5px 0; font-size:2em; color:#333;">⏰ 0.0s</div>
+
+    <h3>Your Translation 👇</h3>
+    <textarea id="translationOutput" readonly></textarea>
+  </div>
+  <script type="module" src="./index.js"></script>
+</body>
+</html>
